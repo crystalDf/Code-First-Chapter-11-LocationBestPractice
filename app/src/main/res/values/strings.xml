@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LocationBestPractice</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="server_url"><![CDATA[http://maps.googleapis.com/maps/api/geocode/]]></string>
+    <!--<string name="server_url"><![CDATA[http://api.map.baidu.com/geocoder/v2/?ak=E4805d16520de693a3fe707cdc962045&callback=renderReverse&output=json&pois=1&location=]]></string>-->
+</resources>
