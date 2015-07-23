@@ -11,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -114,19 +113,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 StringBuilder stringBuilder = new StringBuilder();
-                stringBuilder
-                        .append(getResources().getString(R.string.server_url))
-                        .append("json?")
-                        .append("latlng=")
-                        .append(location.getLatitude())
-                        .append(",")
-                        .append(location.getLongitude())
-                        .append("&sensor=false");
 //                stringBuilder
 //                        .append(getResources().getString(R.string.server_url))
 //                        .append(location.getLatitude())
 //                        .append(",")
 //                        .append(location.getLongitude());
+                stringBuilder
+                        .append(getResources().getString(R.string.server_url))
+                        .append(location.getLatitude())
+                        .append(",")
+                        .append(location.getLongitude());
 
                 InputStream inputStream = null;
 
@@ -181,9 +177,11 @@ public class MainActivity extends AppCompatActivity {
         try {
             JSONObject jsonObject = new JSONObject(string);
 
-            JSONArray jsonArray = jsonObject.getJSONArray("results");
+//            JSONArray jsonArray = jsonObject.getJSONArray("results");
+//
+//            JSONObject addressJsonObject = jsonArray.getJSONObject(0);
 
-            JSONObject addressJsonObject = jsonArray.getJSONObject(0);
+            JSONObject addressJsonObject = jsonObject.getJSONObject("result");
 
             return addressJsonObject.getString("formatted_address");
 
