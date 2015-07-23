@@ -5,5 +5,5 @@
     <string name="action_settings">Settings</string>
 
     <!--<string name="server_url"><![CDATA[http://maps.googleapis.com/maps/api/geocode/json?sensor=false&latlng="]]></string>-->
-    <string name="server_url"><![CDATA[http://api.map.baidu.com/geocoder/v2/?ak=uKniHKKLd3jtqQWwijGwwaII&mcode=2A:80:D7:4A:7C:68:28:66:3D:D3:86:32:CB:8D:DB:A3:F9:E3:EF:07;com.star.locationbestpractice&output=json&pois=1&location=]]></string>
+    <string name="server_url"><![CDATA[http://api.map.baidu.com/geocoder/v2/?ak=uKniHKKLd3jtqQWwijGwwaII&mcode=2A:80:D7:4A:7C:68:28:66:3D:D3:86:32:CB:8D:DB:A3:F9:E3:EF:07;com.star.locationbestpractice&output=json&pois=1&coordtype=wgs84ll&location=]]></string>
 </resources>
